@@ -45,7 +45,7 @@ header {
 
             .button-menu {
                 position: relative;
-                border: 1px solid $PrimaryColor;
+                border: 1px solid $PrimaryColor !important;
                 border-radius: 32px;
                 text-transform: uppercase;
                 line-height: 3rem;
@@ -53,6 +53,10 @@ header {
                 padding: 2.5rem 6rem;
                 transition: padding 0.3s ease;
                 transform: translateX(-2rem);
+
+                &:active, &:focus{
+                    border: 1px solid $PrimaryColor;
+                }
                 
                 span {
                     position: absolute;
@@ -75,7 +79,6 @@ header {
             .button-menu-active {
                 transition: padding 0.3s ease;
                 padding: 2.5rem 2.5rem;
-                border: 1px solid $PrimaryColor;
 
                 #ic-menu{
                     display: none;
