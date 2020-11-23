@@ -95,11 +95,13 @@ form {
         p {
             @include Paragraph;
             line-height: normal;
+            margin-bottom: 1rem;
         }
 
         a {
             @include Link;
             line-height: normal;
+            margin-bottom: 1rem;
         }
     }
 }
