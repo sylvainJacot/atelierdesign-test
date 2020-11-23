@@ -94,14 +94,20 @@ form {
 
         p {
             @include Paragraph;
-            line-height: normal;
-            margin-bottom: 1rem;
+            line-height: 3rem;
+
+            @include laptopS {
+                line-height: 4rem;  
+            }
         }
 
         a {
             @include Link;
-            line-height: normal;
-            margin-bottom: 1rem;
+            line-height: 3rem;
+
+            @include laptopS {
+                line-height: 4rem;  
+            }
         }
     }
 }
