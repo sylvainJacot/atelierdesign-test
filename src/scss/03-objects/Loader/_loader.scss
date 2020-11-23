@@ -19,7 +19,7 @@
         }
 
         .svg-elem-2 {
-            animation: animate-svg2 3s ease-in-out 0.3s both infinite;
+            animation: animate-svg2 3s ease-in-out 0s both infinite;
         }
     }
 }
@@ -52,24 +52,33 @@
 
 @keyframes animate-svg1 {
     0% {
-        fill: transparent;
+        opacity: 1;
         transform: translateY(-4rem);
     }
 
-    100% {
+    70% {
+        opacity: 1;
         fill: #000940;
         transform: translateY(0rem);
+    }
+    100% {
+        opacity: 0;
     }
 }
 
 @keyframes animate-svg2 {
     0% {
-        fill: transparent;
+        opacity: 1;
         transform: translateY(4rem);
     }
 
-    100% {
+    70% {
+        opacity: 1;
         fill: $PrimaryColor;
         transform: translateY(0rem);
+    }
+
+    100% {
+        opacity: 0;
     }
 }
