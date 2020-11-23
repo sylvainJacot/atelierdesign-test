@@ -1,0 +1,24 @@
+{
+  "name": "paynxt",
+  "version": "1.0.0",
+  "description": "Test for Atelier Design",
+  "main": "index.js",
+  "author": "Sylvain",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "watch:css": "onchange 'src/scss' -- npm run scss",
+    "start": "run-p serve watch:css"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  },
+  "dependencies": {
+    "swiper": "^6.3.5"
+  }
+}

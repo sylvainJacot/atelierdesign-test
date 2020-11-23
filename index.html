@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>PAYNXT</title>
+</head>
+
+<body>
+
+        <!-- ////////////  LOADER //////////// -->
+        <div class="loader">
+            <svg width="131" height="23" xmlns="http://www.w3.org/2000/svg">
+                <g fill-rule="nonzero" fill="none">
+                    <g class="svg-elem-1" fill="#000940"><path d="M6.915 9.5h1.687c1.328 0 2.259-.23 2.797-.692.537-.46.805-1.052.805-1.77 0-.7-.233-1.293-.699-1.779-.466-.487-1.342-.73-2.629-.73H6.915V9.5zM0 0h11.444c2.493 0 4.36.593 5.601 1.778 1.241 1.186 1.862 2.872 1.862 5.061 0 2.25-.677 4.008-2.029 5.274-1.353 1.267-3.418 1.9-6.193 1.9h-3.77v8.267H0V0zM31.138 13.785l-2.46-8.01-2.433 8.01h4.893zm1.428 4.817H24.75l-1.086 3.678h-7.03L25.009 0h7.509l8.373 22.28h-7.21l-1.115-3.678zM37.189 0h7.648l4.489 7.517L53.824 0h7.607l-8.663 12.95v9.33h-6.901v-9.33z"/></g>
+                    <g class="svg-elem-2" fill="#FF6901"><path d="M62.699 0h6.429l8.389 12.327V0h6.49v22.28h-6.49l-8.343-12.233V22.28h-6.475zM86.066 0h7.584l3.944 6.854L101.43 0h7.508l-6.935 10.791 7.589 11.49h-7.736l-4.4-7.159-4.4 7.158h-7.69l7.685-11.61zM109.235 0h20.928v5.502h-7.021V22.28h-6.885V5.502h-7.022z"/></g></g>
+                </svg>
+        </div>
+            <!-- ////////////  CURSOR  //////////// -->
+    <div class="cursor"></div>
+
+    <!-- ////////////  HEADER  //////////// -->
+    <header id="header">
+        <h1 class="paynxtLogo" id="paynxtLogo">
+            <a href="index.html">
+                <img src="./src/images/PaynxtLogo_Negatif.svg" alt="Paynxt Logo" id="paynxtLogo-Negatif" />
+                <img src="./src/images/PaynxtLogo_Positif.svg" alt="Paynxt Logo" id="paynxtLogo-Positif" />
+                <span>PAYNXT</span>
+            </a>
+        </h1>
+
+
+        <!-- // Navigation -->
+        <nav class="main-navigation" id="main-navigation">
+
+            <div class="button-menu-container">
+                <button class="button-menu" id="button-menu">
+                    <span id="ic-menu">MENU</span>
+                    <span id="ic-close">X</span>
+                </button>
+            </div>
+            <ul class="main-navigation-list" id="main-navigation-list">
+                <li><a class="main-navigation-link" href="#">Sub-Nav 01</a></li>
+                <li><a class="main-navigation-link" href="#">Sub-Nav 02</a></li>
+                <li><a class="main-navigation-link" href="#">Sub-Nav 03</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ////////////  WEBPAGE CONTENT //////////// -->
+
+    <!-- // Hero Header -->
+    <section class="hero-header" id="hero-header">
+        <div class="hero-header-content translate" data-speed="-0.5">
+            <p>features</p>
+            <h1>A payment flow tailored to your client</h1>
+        </div>
+        <div class="hero-header-background translate" data-speed="0.5"></div>
+    </section>
+
+    <!-- // Sub Hero Header -->
+    <section class="sub-hero-header">
+        <p>With PAY-NXT we offer you the opportunity to optimize your transactional communication via an easy to
+            integrate system. Safe, simple and fast. Everywhere and real-time, regardless of the payment method. PAY-NXT
+            helps to improve the imperfections within the payment process of your customer.</p>
+    </section>
+
+    <!-- // Slider -->
+    <div class="slider-container">
+        <div class="swiper-buttons">
+            <div class="swiper-button-previous-unique"></div>
+            <div class="swiper-button-next-unique"></div>
+        </div>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+
+                    <div class="slide-picture" id="slide-1"></div>
+                    <div class="slide-content">
+                        <h2>Convenience & choice</h2>
+                        <p>Today companies are using multiple channels for transactional customer communication. This
+                            can be a website, a custom app, e-mail, chat or any other digital channel. At PAY-NXT we
+                            know this is the reality and we will assist you in the preparation of this multichannel
+                            payment process.
+                            A payment can be initiated and tracked in multiple channels at the same time. The status of
+                            your customer is synchronized everywhere in real-time. PAY-NXT will support you to integrate
+                            the best payment method in every channel so that your customer can easily, quickly and
+                            safely pay.
+                            Cross Chanel
+                            A payment request can be offered across multiple channels simultaneously or over time. First
+                            an email and then a text, with a live copy in the client portal and the Customer Contact
+                            system. Status is synchronized everywhere in real-time.
+                            Email Sms</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-picture" id="slide-2"></div>
+                    <div class="slide-content">
+                        <h2>Consectetur adipiscing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-picture" id="slide-3"></div>
+                    <div class="slide-content">
+                        <h2>Adipiscing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+    <!-- // Cross channel section -->
+    <div class="cross-channel-grid">
+        <section class="cross-channel">
+
+            <h2>Cross Chanel</h2>
+            <p>A payment request can be offered across multiple channels simultaneously or over time. First an email and
+                then a text, with a live copy in the client portal and the Customer Contact system. Status is
+                synchronized
+                everywhere in real-time.</p>
+
+            <div class="dropdown-wrappers">
+                <div class="dropdown-wrappers-left">
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Email</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Email is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Web</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Web is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>App</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>App is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Customer Portal</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Customer Portal is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-wrappers-right">
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Sms</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>SMS Portal is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Messaging</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Messaging Portal is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Paper</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Paper Portal is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Chat</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Chat Portal is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-label">
+                            <p>Pdf</p>
+                            <span class="dropdown-icon"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>Pdf Portal is the most used channel for sending a payment request.</p>
+                            <p>To track your payment request you can see in real time if the email has been received,
+                                opened, and
+                                paid.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- // Features -->
+    <section class="features">
+        <div class="feature-item">
+            <div class="feature-picture"><img src="./src/images/Features/pexels-snapwire-618612.jpg"
+                    alt="Dynamic Feature" /></div>
+            <div class="feature-content">
+                <div class="feature-content-container">
+                    <h2>Dynamic</h2>
+                    <p>Our emails and Pay Now buttons change color when they are paid or expired, and thus from request
+                        to
+                        receipt. But they can also show a current price, or reveal a QR code after (fast) payment. The
+                        possibilities are endless.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-picture"><img src="./src/images/Features/pexels-vlada-karpovich-4050315.jpg"
+                    alt="Reporting Feature" /></div>
+            <div class="feature-content">
+                <div class="feature-content-container">
+                    <h2>Reporting</h2>
+                    <p>PAY-NXT knows whether payment requests were received, opened, clicked and paid. You can see and
+                        leverage this valuable behavioral data in our dashboard, use it with PowerBI, or ingest via API
+                        or
+                        SFTP for usage in your own systems.</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-picture"><img src="./src/images/Features/pexels-helena-lopes-697243.jpg"
+                    alt="Real-Time Feature" /></div>
+            <div class="feature-content">
+                <div class="feature-content-container">
+                    <h2>Real-Time</h2>
+                    <p>Track the status of every payment request in real-time and know instantly when someone paid -
+                        even if
+                        the money still takes a day or two to make it to your account. Depending on the payment method,
+                        you
+                        can act straight away, for last-minute or last-chance service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- // Contact form -->
+    <section class="contact-container">
+        <address>
+            <h6>Pay Nxt</h6>
+            <div class="address-content">
+
+                    <div class="address-location">
+                        <p>Avenue Reine Astrid 92A</p>
+                        <p>1310 La Hulpe</p>
+                        <p>Belgium </p>
+                    </div>
+                    <div class="address-contact">
+                        <a href="tel:+3226340629">+32 2 634 06 28</a>
+                        <a href="mailto:info@pay-nxt.com">
+                            info@pay-nxt.com
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+        </address>
+        <form action="">
+            <div class="input-container">
+                <input class="input-item" type="text" id="fname" name="firstname" placeholder="First Name" >
+                <label class="label-item" for="fname">First Name</label>
+            </div>
+
+            <div class="input-container">
+                <input class="input-item" type="text" id="lname" name="lastname" placeholder="Last Name" >
+                <label class="label-item" for="lname">Last Name</label></div>
+
+
+            <div class="input-container"> <input type="text" id="companyweb" name="companyweb"
+                    placeholder="Company Web">
+                <label for="companyweb">Company Web</label></div>
+
+
+            <div class="input-container">
+                <input type="url" id="weburl" name="weburl" placeholder="Website url">
+                <label for="weburl">Website url</label>
+            </div>
+
+            <div class="input-container">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                <label for="phone">Phone Number</label>
+            </div>
+
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Email" >
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="subject" name="subject" placeholder="Subject" >
+                <label for="subject">Subject</label>
+            </div>
+
+            <div class="input-container">
+                <textarea id="message" name="message" placeholder="Message" ></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="below-form-content">
+                <p>By submitting this form, I accept what you say in <a href="#">the privacy policy of PAY NXT</a> to
+                    allow
+                    me to contact me.</p>
+            </div>
+            <input type="submit" value="Send" class="primary-button">
+
+        </form>
+
+    </section>
+
+    <footer>
+        L'atelier test made by Jacot Sylvain
+    </footer>
+
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    @include bodyPadding;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 3;
+    background-color: transparent;
+    @include basictransition(.2s);
+
+    .paynxtLogo {
+        display: block;
+        font-size: 0;
+        width: 140px;
+        height: auto;
+        transition: all .3s ease;
+
+        a {
+            display: block;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        #paynxtLogo-Positif {
+            display: none;
+        }
+
+        #paynxtLogo-Negatif {
+            display: block;
+        }
+    }
+
+    .main-navigation {
+        .button-menu-container {
+            width: 72px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include basictransition;
+
+            .button-menu {
+                position: relative;
+                border: 1px solid $PrimaryColor;
+                border-radius: 32px;
+                text-transform: uppercase;
+                line-height: 3rem;
+                overflow: hidden;
+                padding: 2.5rem 6rem;
+                transition: padding 0.3s ease;
+                transform: translateX(-2rem);
+                
+                span {
+                    position: absolute;
+                    line-height: 0;
+                    font-size: 2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: $White;
+                }
+
+            #ic-menu{
+                display: block;
+            }
+            #ic-close {
+                display: none;
+            }
+
+            }
+
+            .button-menu-active {
+                transition: padding 0.3s ease;
+                padding: 2.5rem 2.5rem;
+
+                #ic-menu{
+                    display: none;
+                }
+                #ic-close {
+                    display: block;
+                }
+
+            }
+
+        }
+
+        .main-navigation-list {
+            visibility: hidden;
+            display: flex;
+            position: absolute;
+            z-index: -1;
+            top: 9rem;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0vh;
+            background-color: $White;
+            @include bodyPadding;
+            padding-top: 10rem;
+            flex-direction: column;
+            align-items: left;
+            @include basictransition;
+            li {
+                margin-bottom: 4rem;
+                opacity: 0;
+                @include basictransition($duration : 0.1s,$delay:0.1s);
+                a {
+                    @include Link;
+                    font-size: 3rem;
+                    font-weight: bold;
+
+                    @include laptopS{
+                        font-size: 4rem;
+                    }
+                }
+
+                @include laptopS{
+                    margin-bottom: 6rem;
+                    &:hover {
+                        transform: translateY(-0.5rem);
+ 
+                        a {
+                            color: $SecondaryColor;
+                            @include basictransition($duration : 0.1s);
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-navigation-list-active {
+            height: 100vh;
+            visibility: visible;
+            @include basictransition;
+
+            li {
+                opacity: 1;
+                @include basictransition($delay : 0.2s);
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.dropdown-wrapper {
+    position: relative;
+    border: 1px solid $PrimaryColor;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    
+    @include laptopL {
+        max-width: 424px;
+    }
+
+    .dropdown-label {
+        position: relative;
+        padding: 1rem 2rem;
+        height: 56px;
+        display: flex;
+        align-items: center;
+
+        @include laptopS {
+            padding: 2rem 3rem;
+        }
+
+        p {
+            @include Paragraph;
+            margin: 0;
+            color: $PrimaryColor;
+        }
+
+
+        .dropdown-icon {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 24px;
+            top: 50%;
+            transform: scale(.7) translateY(-50%);
+    
+            &::before,&::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 2px;
+                    background-color: $PrimaryColor;
+                    top: 50%;
+                    transition: all .2s ease-in-out;
+                }
+                &::after{
+                    width: 15px;
+                    transform: rotate(45deg);
+                    left: -2px;
+                }
+                &::before {
+                    transform: rotate(-45deg);
+                    right: -2px;
+                    width: 15px;
+                }
+        }
+    }
+    .dropdown-content {
+        display: none;
+        height: 0;
+        padding: 1rem 2rem;
+        position: relative;
+        transition: all .2s ease-in-out;
+
+        p { 
+            @include Paragraph;
+            margin: 0;
+        }
+
+        @include laptopS {
+            padding: 2rem 3rem;
+        }
+
+
+    }
+}   
+.dropdown-active {
+
+    .dropdown-label {
+        background-color: $PrimaryColor;
+
+        p {
+            color: $White;
+        }
+
+        .dropdown-icon {
+            &::before,&::after {
+                background-color: $White;
+            }
+    
+            &::before{
+                transform: rotate(45deg);
+                right: 0;
+                width: 20px;
+            }
+            &::after{
+                transform: rotate(135deg);
+                left: 0;
+                width: 20px;
+        
+            }
+        }
+
+    }
+
+    .dropdown-content {
+        display: block;
+        height: auto;
+    }
+
+}

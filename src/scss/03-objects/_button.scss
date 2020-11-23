@@ -1,0 +1,18 @@
+@mixin button {
+    position: relative;
+    padding: 8px 16px;
+    border: 1px solid $PrimaryColor;
+    border-radius: 32px;
+    @include Paragraph($White);
+    text-transform: uppercase;
+    width: min-content;
+}
+
+.primary-button {
+    @include button;
+    background-color: $PrimaryColor;
+}
+
+.secondary-button {
+    @include button;
+}

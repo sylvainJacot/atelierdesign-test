@@ -1,0 +1,4 @@
+@mixin basictransition($duration:.3s, $delay:0s){
+    transition: all $duration ease-in;
+    transition-delay: $delay;
+}

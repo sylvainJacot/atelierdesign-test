@@ -1,0 +1,28 @@
+.sub-hero-header {
+    // grid-column: span 2;
+    padding: 5rem 0;
+    @include bodyPadding;
+    @include mainGrid;
+    @include sectionSpaces;
+
+
+    p {
+        color: $SecondaryColor;
+        font-size: 2rem;
+        line-height: 4rem;
+        grid-column: 1 / 3 ;
+        @include tablet {
+            grid-column: 2 / 6 ;
+        }
+
+        @include laptopS {
+            font-size: 3rem;
+            line-height: 6rem;
+            grid-column: 3 / 9 ;
+        }
+        
+        @include laptopL {
+            grid-column: 3 / 11 ;
+        }
+    }
+}
