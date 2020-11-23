@@ -15,11 +15,11 @@
         transform: scale(2);
 
         .svg-elem-1 {
-            animation: animate-svg1 0.8s ease-in-out 0s both;
+            animation: animate-svg1 3s ease-in-out 0s both infinite;
         }
 
         .svg-elem-2 {
-            animation: animate-svg2 0.8s ease-in-out 0.3s both;
+            animation: animate-svg2 3s ease-in-out 0.3s both infinite;
         }
     }
 }
