@@ -54,10 +54,11 @@ header {
                 transition: padding 0.3s ease;
                 transform: translateX(-2rem);
 
-                &:active, &:focus{
+                &:active,
+                &:focus {
                     border: 1px solid $PrimaryColor;
                 }
-                
+
                 span {
                     position: absolute;
                     line-height: 0;
@@ -67,12 +68,13 @@ header {
                     color: $White;
                 }
 
-            #ic-menu{
-                display: block;
-            }
-            #ic-close {
-                display: none;
-            }
+                #ic-menu {
+                    display: block;
+                }
+
+                #ic-close {
+                    display: none;
+                }
 
             }
 
@@ -80,9 +82,10 @@ header {
                 transition: padding 0.3s ease;
                 padding: 2.5rem 2.5rem;
 
-                #ic-menu{
+                #ic-menu {
                     display: none;
                 }
+
                 #ic-close {
                     display: block;
                 }
@@ -107,25 +110,28 @@ header {
             flex-direction: column;
             align-items: left;
             @include basictransition;
+
             li {
                 margin-bottom: 4rem;
                 opacity: 0;
-                @include basictransition($duration : 0.1s,$delay:0.1s);
+                @include basictransition($duration : 0.1s, $delay:0.1s);
+
                 a {
                     @include Link;
                     font-size: 3rem;
                     font-weight: bold;
 
-                    @include laptopS{
+                    @include laptopS {
                         font-size: 4rem;
                     }
                 }
 
-                @include laptopS{
+                @include laptopS {
                     margin-bottom: 6rem;
+
                     &:hover {
                         transform: translateY(-0.5rem);
- 
+
                         a {
                             color: $SecondaryColor;
                             @include basictransition($duration : 0.1s);

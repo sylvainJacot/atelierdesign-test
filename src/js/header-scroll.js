@@ -3,7 +3,6 @@ window.onscroll = function () {
 };
 
 var header = document.getElementById("header");
-// var buttonMenu = document.getElementById("button-menu");
 var logoPositif = document.getElementById("paynxtLogo-Positif");
 var logoNegatif = document.getElementById("paynxtLogo-Negatif");
 

@@ -1,57 +1,63 @@
-.cross-channel-grid{
+.cross-channel-grid {
     @include bodyPadding;
     @include mainGrid;
     @include sectionSpaces;
-.cross-channel {
-    position: relative;
-    background-color: $White;
-    grid-column: span 2;
 
-    @include tablet{
-        grid-column: 2 / 6;
-    }
-    @include laptopS{
-        grid-column: 3 / 9;
-    }
-    @include laptopL{
-        grid-column: 2 / 12;
-    }
-    h2 {
-        @include h2-Title;
-    }
-    > p {
-        @include Paragraph;
+    .cross-channel {
+        position: relative;
+        background-color: $White;
+        grid-column: span 2;
 
-    }
-
-    .dropdown-wrappers {
-
-        padding-top: 5rem;
-    
         @include tablet {
-            padding-top: 8rem;
-        }
-    
-        @include laptopS {
-            padding-top: 10rem;
+            grid-column: 2 / 6;
         }
 
         @include laptopS {
-            display: flex;
-            justify-content: space-between;
+            grid-column: 3 / 9;
         }
 
+        @include laptopL {
+            grid-column: 2 / 12;
+        }
 
-        .dropdown-wrappers-left, .dropdown-wrappers-right  {
+        h2 {
+            @include h2-Title;
+        }
+
+        >p {
+            @include Paragraph;
+
+        }
+
+        .dropdown-wrappers {
+
+            padding-top: 5rem;
+
+            @include tablet {
+                padding-top: 8rem;
+            }
 
             @include laptopS {
-                width: 320px;
+                padding-top: 10rem;
             }
 
-            @include laptopL {
-                width: 50%;
+            @include laptopS {
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+            .dropdown-wrappers-left,
+            .dropdown-wrappers-right {
+
+                @include laptopS {
+                    width: 320px;
+                }
+
+                @include laptopL {
+                    width: 50%;
+                }
             }
         }
     }
-}
 }

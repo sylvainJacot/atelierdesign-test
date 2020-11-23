@@ -5,6 +5,7 @@
     :nth-child(odd) {
         flex-direction: row;
     }
+
     :nth-child(even) {
         flex-direction: row-reverse;
     }
@@ -19,11 +20,11 @@
         @include laptopS {
             &:hover {
                 .feature-picture {
-                img {
-                    transform: translate(-50%,-50%) scale(1.05);
-                    @include basictransition;
+                    img {
+                        transform: translate(-50%, -50%) scale(1.05);
+                        @include basictransition;
+                    }
                 }
-            }
             }
         }
 
@@ -52,10 +53,11 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 height: auto;
                 width: 100%;
                 @include basictransition($delay: .3s);
+
                 @include tablet {
                     height: 100%;
                     width: auto;
@@ -75,9 +77,11 @@
                 width: 50%;
                 height: 320px;
             }
+
             @include laptopS {
                 height: 480px;
             }
+
             @include laptopL {
                 height: 600px;
             }

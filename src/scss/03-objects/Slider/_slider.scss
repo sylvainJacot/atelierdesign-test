@@ -1,4 +1,3 @@
-
 @mixin slideimg($src) {
     background: url("../../src/images/Slider/#{$src}") no-repeat center;
     background-size: cover;
@@ -26,19 +25,22 @@ $slide3 : "slide3.jpg";
 
     @include tablet {
         display: flex;
-        top: $tablet_padding + 8rem; 
+        top: $tablet_padding + 8rem;
     }
+
     @include laptopS {
         top: $laptop_padding + 26rem;
-        margin-left:15rem; 
+        margin-left: 15rem;
     }
+
     @include laptopL {
         top: $laptop_padding + 26rem;
-        margin-left:0rem; 
+        margin-left: 0rem;
     }
 
 
-    .swiper-button-next-unique, .swiper-button-previous-unique {
+    .swiper-button-next-unique,
+    .swiper-button-previous-unique {
         display: block;
         position: relative;
         width: 56px;
@@ -57,28 +59,30 @@ $slide3 : "slide3.jpg";
             height: 100%;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             background: url("../../src/icons/Arrow_Right.svg") no-repeat center;
             background-size: contain;
         }
 
     }
-    .swiper-button-next-unique{
+
+    .swiper-button-next-unique {
         margin-left: 1rem;
     }
-    .swiper-button-previous-unique{
+
+    .swiper-button-previous-unique {
         transform: rotate(-180deg);
     }
 }
 
 .swiper-container {
-    position: relative;   
+    position: relative;
 
     .swiper-wrapper {
         width: 100%;
         height: 100%;
 
-        .swiper-slide{
+        .swiper-slide {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -112,12 +116,14 @@ $slide3 : "slide3.jpg";
                     grid-row: 1;
                     justify-self: end;
                 }
+
                 @include laptopS {
                     width: 480px;
                     height: 480px;
                     grid-column: 4 / 10;
                     justify-self: end;
                 }
+
                 @include laptopL {
                     width: 520px;
                     height: 480px;
@@ -125,43 +131,53 @@ $slide3 : "slide3.jpg";
                     justify-self: end;
                 }
             }
+
             #slide-1 {
                 @include slideimg($slide1);
             }
+
             #slide-2 {
                 @include slideimg($slide2);
             }
+
             #slide-3 {
                 @include slideimg($slide3);
             }
+
             .slide-content {
                 position: relative;
                 width: 100%;
                 @include mainGridChild;
+
                 @include tablet {
                     grid-column: 1 / 4;
-                    grid-row: 1 ;
+                    grid-row: 1;
                     justify-self: start;
                     margin-top: 140px;
                 }
+
                 @include laptopS {
                     grid-column: 2 / 5;
                     margin-top: 240px;
                 }
+
                 @include laptopL {
                     grid-column: 1 / 7;
                     margin-top: 240px;
                 }
-                h2{
+
+                h2 {
                     @include h2-Title;
                 }
-                p{
+
+                p {
                     @include Paragraph;
                 }
             }
         }
 
     }
+
     .swiper-pagination {
         position: absolute;
         top: 37rem;
@@ -172,6 +188,7 @@ $slide3 : "slide3.jpg";
         justify-content: center;
 
     }
+
     .swiper-pagination-bullet {
         border-radius: 50%;
         width: 8px;
@@ -181,8 +198,9 @@ $slide3 : "slide3.jpg";
         @include tablet {
             display: none;
         }
-        
+
     }
+
     .swiper-pagination-bullet-active {
         background: $PrimaryColor;
         width: 16px;
@@ -191,7 +209,3 @@ $slide3 : "slide3.jpg";
 
 
 }
-
-
-
-

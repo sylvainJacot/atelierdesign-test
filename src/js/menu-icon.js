@@ -1,4 +1,3 @@
-// const close_menu = document.getElementById("burger-menu");
 const menu_icon = document.getElementById("button-menu");
 const mainNav = document.getElementById("main-navigation-list");
 

@@ -5,7 +5,6 @@
 
 // 02 BASE
 @import "../scss//02-base/reset";
-@import "../scss/02-base/_forms";
 @import "../scss/02-base/_typography";
 @import "../scss/02-base/grid";
 
@@ -28,7 +27,3 @@
 @import "../scss/04-globals/Section-Contact/contact-section";
 @import "../scss/04-globals/Section-Slider/Section_Slider";
 
-
-body {
-    background-color: $White;
-}

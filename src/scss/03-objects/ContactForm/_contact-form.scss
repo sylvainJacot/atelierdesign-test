@@ -12,7 +12,8 @@ form {
             margin-bottom: 6rem;
         }
 
-        input:not([type="submit"]), textarea {
+        input:not([type="submit"]),
+        textarea {
             background-color: $White;
             border: 1px solid $SecondaryColor;
             width: calc((100% - 2rem) - 2px);
@@ -50,9 +51,14 @@ form {
                 @include basictransition;
                 color: $SecondaryColor;
                 opacity: .5;
+
+                @include laptopS {
+                    top: 1rem;
+                }
             }
 
-            &:focus, &:active {
+            &:focus,
+            &:active {
                 border: 1px solid $PrimaryColor;
             }
 
@@ -68,11 +74,13 @@ form {
             }
 
         }
+
         textarea {
             @include Paragraph;
             resize: none;
 
-            &:focus, &:active {
+            &:focus,
+            &:active {
                 height: 300px;
             }
         }
@@ -97,7 +105,7 @@ form {
             line-height: 3rem;
 
             @include laptopS {
-                line-height: 4rem;  
+                line-height: 4rem;
             }
         }
 
@@ -106,9 +114,8 @@ form {
             line-height: 3rem;
 
             @include laptopS {
-                line-height: 4rem;  
+                line-height: 4rem;
             }
         }
     }
 }
-
