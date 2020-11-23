@@ -52,16 +52,3 @@ gsap.from(".dropdown-wrapper", {
   stagger: 0.5,
   ease: "power1.inOut",
 });
-
-gsap.from(".slide-picture", {
-  scrollTrigger: {
-    trigger: ".slider-container",
-    start: "top center",
-    end: "top center",
-    scrub: 4,
-    markers: false,
-  },
-  y: 56,
-  duration: 0.6,
-  ease: "power1.inOut",
-});
